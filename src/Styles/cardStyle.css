@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(201 235 255);
+}
+
+.card {
+    max-width: 600px;
+    display: flex;
+    min-width: 200px;
+    margin-top: 150px;
+    border-radius: 6px;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.card .topinfo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.card .topinfo button {
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+}
+
+.card .topinfo h3 {
+    font-family: "Lato", sans-serif !important;
+    color: white;
+}
+
+.card hr {
+    height: 2px;
+    background-color: #ffffff17;
+    border: none;
+    margin-top: 8px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px black;
+}
+
+.card .midinfo {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.card .midinfo .left {
+    width: 50%;
+}
+
+.card .midinfo .right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+}
+
+.card .midinfo .right .degree {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card .midinfo .right .numbers {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card .midinfo .left .css-1umw9bq-MuiSvgIcon-root {
+    font-size: 200px;
+    color: white;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:450px) {
+    .card {
+        margin-top: 50px;
+    }
+
+    .card .topinfo h3 {
+        font-size: 25px;
+    }
+
+    .card .topinfo button {
+        font-size: 10px;
+    }
+
+    .card hr {
+        margin-top: 15px;
+    }
+
+    .card .midinfo .left .css-1umw9bq-MuiSvgIcon-root {
+        font-size: 100px;
+    }
+
+    .card .midinfo .right {
+        gap: 5px;
+    }
+
+    .card .midinfo .right .degree {
+        gap: 0;
+    }
+
+    .card .midinfo .right .degree img {
+        width: 60px;
+    }
+
+    .card .midinfo .right .degree h2 {
+        font-size: 22px;
+    }
+
+    .card .midinfo .right .numbers {
+        gap: 5px;
+    }
+
+    .card .midinfo .right .numbers h6 {
+        font-size: 10px;
+    }
+
+    .btns button {
+        font-size: 14px;
+    }
+}
